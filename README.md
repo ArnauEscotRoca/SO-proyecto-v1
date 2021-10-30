@@ -1,5 +1,7 @@
 ## Proyecto Sistemas Operativos
 
+************ ESTA VERSION ES DE PRUEBA!!!!! ************
+
 ### Version 1 del proyecto.
 
 Cliente-Servidor y Consultas básicas

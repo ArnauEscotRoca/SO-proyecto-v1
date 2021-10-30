@@ -8,6 +8,7 @@
 #include <mysql.h>
 
 MYSQL *conn;
+int contador;
 
 int insertar(char nombre[20], char password[20]){
 	
@@ -300,7 +301,7 @@ int main(int argc, char **argv)
 	//htonl formatea el numero que recibe al formato necesario
 	serv_adr.sin_addr.s_addr = htonl(INADDR_ANY);
 	// establecemos el puerto de escucha
-	serv_adr.sin_port = htons(9080);
+	serv_adr.sin_port = htons(9070);
 	
 	if (bind(sock_listen, (struct sockaddr *) &serv_adr, sizeof(serv_adr)) < 0)
 		printf ("Error al bind");
@@ -308,6 +309,7 @@ int main(int argc, char **argv)
 	if (listen(sock_listen, 3) < 0)
 		printf("Error en el Listen");
 	
+	contador = 0;
 	
 	// Bucle infinito
 	for (;;){
@@ -446,17 +448,24 @@ int main(int argc, char **argv)
 					strcpy(respuesta, "No hay partida");
 			}
 			
+			else if (codigo == 7) //Lista de conectados
+			{		
+				sprintf(respuesta,"%d %s", contador);
+			}
+			
 			if (codigo != 0)
 			{
 				printf ("Respuesta: %s\n", respuesta);
 				// Enviamos respuesta
 				write (sock_conn,respuesta,strlen(respuesta));
 			}
-			
+			if ((codigo == 1) || (codigo == 2) || (codigo == 3) || (codigo == 4) || (codigo == 5) || (codigo == 6))
+				contador = contador + 1;
 		}
+		//fin conexion con este cliente
 		close(sock_conn);
-		// Cerrar la conexion con el servidor MYSQL
 	}
+		// Cerrar la conexion con el servidor MYSQL
 		mysql_close (conn);
 }
 	
