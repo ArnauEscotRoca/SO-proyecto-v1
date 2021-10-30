@@ -39,6 +39,8 @@
             this.Enviar = new System.Windows.Forms.Button();
             this.conectar = new System.Windows.Forms.Button();
             this.Desconectar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.contLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nombres
@@ -135,7 +137,7 @@
             // 
             // conectar
             // 
-            this.conectar.Location = new System.Drawing.Point(630, 121);
+            this.conectar.Location = new System.Drawing.Point(630, 66);
             this.conectar.Name = "conectar";
             this.conectar.Size = new System.Drawing.Size(134, 58);
             this.conectar.TabIndex = 9;
@@ -145,7 +147,7 @@
             // 
             // Desconectar
             // 
-            this.Desconectar.Location = new System.Drawing.Point(630, 206);
+            this.Desconectar.Location = new System.Drawing.Point(630, 130);
             this.Desconectar.Name = "Desconectar";
             this.Desconectar.Size = new System.Drawing.Size(134, 61);
             this.Desconectar.TabIndex = 10;
@@ -153,11 +155,32 @@
             this.Desconectar.UseVisualStyleBackColor = true;
             this.Desconectar.Click += new System.EventHandler(this.Desconectar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(630, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 59);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Lista Conectados";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // contLbl
+            // 
+            this.contLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contLbl.Location = new System.Drawing.Point(630, 259);
+            this.contLbl.Name = "contLbl";
+            this.contLbl.Size = new System.Drawing.Size(134, 120);
+            this.contLbl.TabIndex = 12;
+            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 404);
+            this.Controls.Add(this.contLbl);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Desconectar);
             this.Controls.Add(this.conectar);
             this.Controls.Add(this.Enviar);
@@ -190,5 +213,7 @@
         private System.Windows.Forms.Button Enviar;
         private System.Windows.Forms.Button conectar;
         private System.Windows.Forms.Button Desconectar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label contLbl;
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\PUNF13\Desktop\SO\Cliente\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\PUNF13\Desktop\SO\Cliente\bin\Debug\WindowsFormsApp1.exe
+C:\Users\PUNF13\Desktop\SO\Cliente\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\Cliente.csprojAssemblyReference.cache
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.Consultas.resources
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.Iniciar.resources
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.Registro.resources
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\Cliente.csproj.GenerateResource.cache
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\Cliente.csproj.CoreCompileInputs.cache
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.exe
+C:\Users\PUNF13\Desktop\SO\Cliente\obj\Debug\WindowsFormsApp1.pdb
